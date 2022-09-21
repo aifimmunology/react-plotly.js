@@ -148,6 +148,7 @@ export default function plotComponentFactory(Plotly) {
 
       this.removeUpdateEvents();
 
+      if (!this.el) return;
       Plotly.purge(this.el);
     }
 
